@@ -84,3 +84,7 @@
 .containerFormadores{
     width: 70%;
 }
+
+.noMostrar{
+    display: none;
+}
