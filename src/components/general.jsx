@@ -1,0 +1,32 @@
+import React from 'react'
+import styles from '../components/general.module.css'
+import { Header } from './header'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { faUser, faChevronRight, faFolderOpen, faFile, faEye, faCirclePlay, faCircleExclamation } from '@fortawesome/free-solid-svg-icons'
+import { Proyectos } from './proyectos'
+
+
+export const General = () => {
+  return (
+    <div className={styles.general}>
+        <Header />
+        <div className={styles.content}>
+        <nav className={styles.barraLateral}>
+            <ul>
+              <li><a href=""><FontAwesomeIcon className={styles.iconBarra} icon={faChevronRight} />Estadisticas</a></li>
+              <li className={`${styles.linkProyectos}`}><a href=""><FontAwesomeIcon className={styles.iconBarra} icon={faFolderOpen} />Proyectos</a></li>
+              <li><a href=""><FontAwesomeIcon className={styles.iconBarra} icon={faFile} />Workbooks</a></li>
+              <li  className={`${styles.linkConsultas}`}><a href=""><FontAwesomeIcon className={styles.iconBarra} icon={faEye} />Consultas</a></li>
+              <li className={`${styles.linkMat}`}><a href=""><FontAwesomeIcon className={styles.iconBarra} icon={faCirclePlay} />Material de Apoyo</a></li>
+              <li className={`${styles.linkAnuncios}`}><a href=""><FontAwesomeIcon className={styles.iconBarra} icon={faCircleExclamation} />Anuncios</a></li>
+              <li className={`${styles.linkEst}`}><a href=""><FontAwesomeIcon className={styles.iconBarra} icon={faUser} />Estudiantes</a></li>
+            </ul>
+        </nav>
+        <div className={styles.containerFormadores}>
+          <Proyectos />
+        </div>
+        </div>
+    </div>
+  )
+}

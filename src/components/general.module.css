@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    list-style: none;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.barraLateral{
+    margin-top: 0px;
+    margin-left: 50px;
+    display: inline-block;
+    background: #737171;
+    border-radius: 25px;
+}
+
+.barraLateral ul li{
+    padding: 15px 40px 15px 20px;
+    border-radius: 25px;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.barraLateral ul li:hover{
+    border-radius: 25px;
+    background: #404040;
+    transition: 0.2s ease;
+    cursor: pointer;
+    /* border-bottom: 6px solid #F9BF05; */
+}
+
+.barraLateral ul li:hover::after{
+    content: '';
+    display: block;
+    margin-left: 40px;
+    background-color: #F9BF05;
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    bottom: 0;
+    left: 10px;
+    border-radius: 50px;
+}
+
+.barraLateral ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.iconBarra{
+    padding-right: 30px;
+    color: #F9BF05;
+    font-size: 25px;
+}
+
+.barraLateral ul .linkProyectos .iconBarra{
+    padding-right: 22px;
+}
+
+.barraLateral ul .linkConsultas .iconBarra{
+    padding-right: 22px;
+}
+
+.barraLateral ul .linkMat .iconBarra{
+    padding-right: 25px;
+}
+
+.barraLateral ul .linkAnuncios .iconBarra{
+    padding-right: 25px;
+}
+
+.barraLateral ul .linkEst .iconBarra{
+    padding-right: 28px;
+}
+
+.containerFormadores{
+    width: 70%;
+}
