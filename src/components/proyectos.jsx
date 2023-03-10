@@ -1,7 +1,15 @@
 import React from 'react'
 import styles from '../components/proyectos.module.css'
+import { General } from './general'
+
 
 export const Proyectos = () => {
+
+  function OpenProyect() {
+    var ContainerProyects = document.getElementsByClassName('dashProyectos')[0]
+    return <General variable={ContainerProyects} />
+  }
+
   return (
     <div className={styles.dashProyectos}>
         <div className={styles.proyectSup}>
